@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlotte Keefe | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e5e7eb;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1e3a5f;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4b5563;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1e3a5f;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 8%;
+            background: linear-gradient(135deg, #eef4fb, #ffffff);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .small-title {
+            color: #4f7096;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            line-height: 1;
+            color: #172b4d;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #52606d;
+            margin-bottom: 25px;
+        }
+
+        .statement {
+            font-size: 1.2rem;
+            max-width: 700px;
+            color: #374151;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #1e3a5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .button:hover {
+            background: #2f5685;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 80px 8%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: #172b4d;
+            margin-bottom: 35px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: white;
+            border: 1px solid #dbe3ec;
+            padding: 12px 18px;
+            border-radius: 25px;
+            font-weight: 500;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .project-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #59636e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #172b4d;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Charlotte Keefe</div>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="about">
+        <div class="hero-content">
+            <div class="small-title">Rutgers University • Accounting</div>
+
+            <h1>Charlotte Keefe</h1>
+
+            <h2>Accounting Student & Aspiring CPA</h2>
+
+            <p class="statement">
+                I am an accounting student at Rutgers University interested in
+                developing my skills in accounting, financial analysis, and
+                business while preparing for a career as a CPA.
+            </p>
+
+            <a href="#projects" class="button">View My Work</a>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+            <div class="skill">Accounting</div>
+            <div class="skill">Microsoft Excel</div>
+            <div class="skill">Financial Analysis</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Communication</div>
+            <div class="skill">Teamwork</div>
+            <div class="skill">Microsoft Office</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>Internal Audit Job Simulation</h3>
+                <p>
+                    Completed a job simulation focused on internal auditing,
+                    including analyzing business scenarios, identifying
+                    discrepancies, and considering appropriate audit procedures.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Business & Accounting Coursework</h3>
+                <p>
+                    Applied accounting and business concepts through coursework
+                    and projects at Rutgers University, developing analytical,
+                    problem-solving, and professional communication skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Charlotte Keefe • Rutgers University</p>
+    </footer>
+
+</body>
+</html>
